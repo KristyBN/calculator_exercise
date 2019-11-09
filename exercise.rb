@@ -16,7 +16,14 @@ until quit do
     puts "q. Quit"
     user_input = gets.chomp
     case user_input
-    when "q"
+    when "1"
+        puts "whats your fist number?"
+        num1 = gets.chomp.to_i
+        puts "whats your second number?"
+        num2 = gets.chomp.to_i
+        result = num1 + num2
+        puts result
+        when "q"
         quit = true
     end 
 
