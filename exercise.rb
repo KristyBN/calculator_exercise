@@ -5,7 +5,8 @@
 # takes 2 values
 #  -sum, subtract, multiply, divide and square
 
-loop do
+quit = false
+until quit do
     puts "options"
     puts "1. Sum"
     puts "2. Subtract"
@@ -13,6 +14,11 @@ loop do
     puts "4. Multiply"
     puts "5. Square"
     puts "q. Quit"
-    
+    user_input = gets.chomp
+    case user_input
+    when "q"
+        quit = true
+    end 
+
 end
 
